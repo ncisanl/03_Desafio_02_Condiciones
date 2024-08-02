@@ -116,3 +116,29 @@
   color: black;
   border-radius: 3px;
 }
+
+.header-pass{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header-a-pass{
+  align-content: center;
+  margin-left: 10px;
+  color: white;
+}
+
+.header-h1-pass{
+  margin-inline-end: auto;
+  margin-left: auto;
+}
+
+.select-style {
+  width: 2.5rem;
+  height: 1.5rem;
+}
+
+.PPass {
+  margin-top: 20px;
+}

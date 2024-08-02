@@ -1,13 +1,6 @@
 hasBorder = false;
-totalSticker = 0;
-stickerRainbow = 0;
-stickerDog = 0;
-stickerPizza = 0;
 
 yawningCatImg = document.querySelector("#yawningCatId");
-
-totalStickerSpan = document.querySelector("#totalStickerId");
-totalStickerSpan.innerHTML = totalSticker;
 
 const validateBorder = () => {
   if (hasBorder) {
@@ -25,19 +18,34 @@ const checkSticker = () => {
   let totalStickerDogFinal = document.querySelector("#stickerDogId");
   let totalStickerPizzaFinal = document.querySelector("#stickerPizzaId");
 
-  let contentTotalStickerFinal = Number(totalStickerFinal.innerHTML);
-  let contentTotalStickerRainbowFinal = Number(totalStickerRainbowFinal.value);
-  let contentTotalStickerDogFinal = Number(totalStickerDogFinal.value);
-  let contentTotalStickerPizzaFinal = Number(totalStickerPizzaFinal.value);
-
-  contentTotalStickerFinal =
-    contentTotalStickerRainbowFinal +
-    contentTotalStickerDogFinal +
-    contentTotalStickerPizzaFinal;
+  let contentTotalStickerFinal =
+    Number(totalStickerRainbowFinal.value) +
+    Number(totalStickerDogFinal.value) +
+    Number(totalStickerPizzaFinal.value);
 
   if (contentTotalStickerFinal <= 10) {
     totalStickerFinal.innerHTML = contentTotalStickerFinal;
   } else {
     totalStickerFinal.innerHTML = "demasiados";
+  }
+};
+
+const checkPassword = () => {
+  let checkPassFinal = document.querySelector("#checkPassId");
+  let selectPassOneFinal = document.querySelector("#selectPassOne");
+  let selectPassTwoFinal = document.querySelector("#selectPassTwo");
+  let selectPassTheeFinal = document.querySelector("#selectPassThee");
+
+  let contentSelectPassFinal =
+    selectPassOneFinal.value +
+    selectPassTwoFinal.value +
+    selectPassTheeFinal.value;
+
+  if (contentSelectPassFinal === "911") {
+    checkPassFinal.innerHTML = "password 1 correcto";
+  } else if (contentSelectPassFinal === "714") {
+    checkPassFinal.innerHTML = "password 2 correcto";
+  } else {
+    checkPassFinal.innerHTML = "password incorrecto";
   }
 };
