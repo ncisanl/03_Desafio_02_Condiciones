@@ -24,8 +24,34 @@
 
 .sect-main {
   grid-area: main;
+}
+
+.main-style-index {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.main-style-remove-border {
+  display: flex;
+  align-items: self-start;
+  justify-content: center;
+  padding-top: 4rem;
+}
+
+.card-yawning-cat {
+  max-height: 450px;
+  max-width: 300px;
+}
+
+.img-yawning-cat {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.border-img-yawning-cat {
+  border: 2px solid red;
 }
