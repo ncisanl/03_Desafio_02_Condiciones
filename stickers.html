@@ -11,7 +11,45 @@
     <header class="sect-header">
       <h1>Stickers</h1>
     </header>
-    <main class="sect-main"></main>
+    <main class="sect-main main-style-sticker">
+      <section>
+        <h2>Puedes llevar hasta 10 sticker en total</h2>
+      </section>
+      <section class="sect-card">
+        <div class="card-sticker card-sticker-rainbow">
+          <img
+            alt="Sticker rainbow"
+            src="assets/img/sticker-01.png"
+            class="img-sticker"
+          />
+          <input class="input-sticker" type="number" id="stickerRainbowId" />
+        </div>
+        <div class="card-sticker card-sticker-dog">
+          <img
+            alt="Sticker dog"
+            src="assets/img/sticker-02.png"
+            class="img-sticker"
+          />
+          <input class="input-sticker" type="number" id="stickerDogId" />
+        </div>
+        <div class="card-sticker card-sticker-pizza">
+          <img
+            alt="Sticker pizza"
+            src="assets/img/sticker-03.png"
+            class="img-sticker"
+          />
+          <input class="input-sticker" type="number" id="stickerPizzaId" />
+        </div>
+      </section>
+      <section class="sect-total-sticker">
+        <p>Llevas <span id="totalStickerId"></span> sticker</p>
+      </section>
+      <section>
+        <button class="button-sticker" onclick="checkSticker()">
+          Verificar
+        </button>
+      </section>
+    </main>
     <script src="assets/js/script.js"></script>
   </body>
 </html>
