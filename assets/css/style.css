@@ -33,6 +33,11 @@
   justify-content: space-around;
 }
 
+.img-home {
+  max-width: 15rem;
+  height: 100%;
+}
+
 .main-style-remove-border {
   display: flex;
   flex-direction: row;
@@ -117,19 +122,19 @@
   border-radius: 3px;
 }
 
-.header-pass{
+.header-pass {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.header-a-pass{
+.header-a-pass {
   align-content: center;
   margin-left: 10px;
   color: white;
 }
 
-.header-h1-pass{
+.header-h1-pass {
   margin-inline-end: auto;
   margin-left: auto;
 }
